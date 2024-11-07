@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 import java.util.Date;
 import java.util.UUID;
 
-
 @Entity
 @Table(name = "produtos")
 public class Produtos {
@@ -26,8 +25,6 @@ public class Produtos {
     private String nomeProduto;
 
     private Date dataCadastro;
-
-    // Getters and setters (ou usar Lombok)
 
     public UUID getIdProduto() {
         return idProduto;
@@ -100,7 +97,4 @@ public class Produtos {
     public void setDataCadastro(Date dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-}
-
-
 }
