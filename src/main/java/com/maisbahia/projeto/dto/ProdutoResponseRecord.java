@@ -1,6 +1,6 @@
 package com.maisbahia.projeto.dto;
 
-import com.maisbahia.projeto.model.enums.CategoriaProdutoEnum;
+//import com.maisbahia.projeto.model.enums.CategoriaProdutoEnum;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -10,7 +10,7 @@ public record ProdutoResponseRecord
 (
     UUID idProduto,
     String nomeProduto,
-    CategoriaProdutoEnum categoria,
+//    CategoriaProdutoEnum categoria,
     Integer quantidade,
     String lote,
     LocalDate dataValidade,

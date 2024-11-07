@@ -26,7 +26,7 @@ public class ProdutoService
     {
         Produto produto = new Produto(
                 null,
-                request.categoria(),
+//                request.categoria(),
                 request.quantidade(),
                 request.lote(),
                 request.dataValidade(),
@@ -55,7 +55,7 @@ public class ProdutoService
         Produto produto = produtoRepository.findById(id).orElseThrow(() -> new RuntimeException("Produto não encontrado"));
 
         produto.setNomeProduto(request.nomeProduto());
-        produto.setCategoria(request.categoria());
+//        produto.setCategoria(request.categoria());
         produto.setQuantidade(request.quantidade());
         produto.setLote(request.lote());
         produto.setDataValidade(request.dataValidade());
@@ -80,7 +80,7 @@ public class ProdutoService
         return new ProdutoResponseRecord(
                 produto.getIdProduto(),
                 produto.getNomeProduto(),
-                produto.getCategoria(),
+//                produto.getCategoria(),
                 produto.getQuantidade(),
                 produto.getLote(),
                 produto.getDataValidade(),
