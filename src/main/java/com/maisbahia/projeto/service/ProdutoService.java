@@ -26,7 +26,7 @@ public class ProdutoService
     {
         Produto produto = new Produto(
                 null,
-//                request.categoria(),
+                request.categoria(),
                 request.quantidade(),
                 request.lote(),
                 request.dataValidade(),
@@ -80,7 +80,7 @@ public class ProdutoService
         return new ProdutoResponseRecord(
                 produto.getIdProduto(),
                 produto.getNomeProduto(),
-//                produto.getCategoria(),
+                produto.getCategoria(),
                 produto.getQuantidade(),
                 produto.getLote(),
                 produto.getDataValidade(),

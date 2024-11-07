@@ -1,6 +1,7 @@
 package com.maisbahia.projeto.model;
 
 //import com.maisbahia.projeto.model.enums.CategoriaProdutoEnum;
+import com.maisbahia.projeto.model.enums.CategoriaProdutoEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,8 +20,8 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idProduto;
 
-//    @Enumerated(EnumType.STRING)
-//    private CategoriaProdutoEnum categoria;
+    @Enumerated(EnumType.STRING)
+    private CategoriaProdutoEnum categoria;
 
     private Integer quantidade;
     private String lote;
